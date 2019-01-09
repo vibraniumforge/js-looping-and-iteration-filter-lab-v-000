@@ -11,7 +11,7 @@ function fuzzyMatch(ar, partialName) {
   let pNLength=partialName.length
   return ar.filter(function(el)
   {
-    return el.toLowerCase().slice(0, pNLength)===name;
+    return el.slice(0, pNLength)===name;
   }
 )
 }
