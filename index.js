@@ -4,10 +4,8 @@ function findMatching(ar, name) {
   return ar.filter(function(el)
   {
     return el.toLowerCase()===name.toLowerCase();
-  }
-)
+  })
 }
-
 
 function fuzzyMatch(ar, name) {
   return ar.filter(function(el)
