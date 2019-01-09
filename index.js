@@ -7,7 +7,8 @@ function findMatching(ar, name) {
   })
 }
 
-function fuzzyMatch(ar, name) {
+function fuzzyMatch(ar, partialName) {
+  let pNLength=partialName.length
   return ar.filter(function(el)
   {
     return el.toLowerCase().charAt(0)===name.toLowerCase().charAt(0);
