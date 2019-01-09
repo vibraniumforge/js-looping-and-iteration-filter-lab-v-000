@@ -19,6 +19,6 @@ function fuzzyMatch(ar, name) {
 
 function matchName(ar, name) {
   return ar.filter(function(el) {
-    return el.name===name;
+    return el.name.toLowerCase()===name.toLowerCase();
   })
 }
